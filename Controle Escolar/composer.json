@@ -1,7 +1,7 @@
 {
     "name": "resultsystems/school",
-    "description": "Sistema de gerenciamento de escola de musicas.",
-    "keywords": ["school", "escola", "music", "musica"],
+    "description": "Sistema de gerenciamento de escola.",
+    "keywords": ["school", "escola"],
     "license": "MIT",
     "type": "project",
     "require": {
