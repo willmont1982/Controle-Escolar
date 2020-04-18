@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: Leandro Henrique Reis <emtudo@gmail.com>
- * @Date:   2016-05-06 19:32:45
- * @Last Modified by:   Leandro Henrique Reis
- * @Last Modified time: 2016-06-04 19:51:14
- */
+
 class calculateInterestTest extends TestCase
 {
     public function test_calculate_interest()
