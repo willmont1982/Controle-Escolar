@@ -1,17 +1,11 @@
-# Pacote abandonado, use para estudo se for o caso, antes de solicitar ajuda para instalação assista os vídeos sobre para você entender o objetivo do pacote
 
-## Recomendo: https://github.com/emtudo/school-api
+## APLICAÇÃO PARA GERENCIAMENTO ACADEMICO COMPLETO
+## OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no projeto como um diferencial para minha avaliação, como por exemplo cadastros de controle de aluno, matérias e professores em PHP. Implementei também menu responsivo para uso mobile e router para carregamento de Forms.
 
-## Sistema para gerenciamento de escola
-
-[Vídeo com template](https://www.youtube.com/watch?v=Z11WPs8AJvY)
-
-[Vídeo explicando a ideia do sistema](https://www.youtube.com/watch?v=kd0y0e_2dR4)
-
-## O que tem o sistema?
+## FUNÇÕES DA APLICAÇÃO
 - Todo desenvolvido com TDD
 - Cadastro de alunos
-- Cadastro de cedente (Emitente da cobrança)
+- Cadastro de cedente * EXTRA
 - Cadastro de funcionários
 - Cadastro de horários
 - Cadastro de matérias
@@ -19,10 +13,14 @@
 - Cadastro de professores
 - Cadastro de turmas
 - Cadastro de usuários (Aluno, Funcionário e Professor)
-- Geração de boleto automático (caixa e. federal, banco do brasil, banco itau, hsbc, santander)
+- Geração de boleto automático * EXTRA
 
-## Requisitos do servidor
-
+## TECNOLOGIAS USADAS
+- ANGULAR
+- VUE.JS E MATERIALIZE
+- HTML (Layout das páginas)
+- Javascript (BackEnd)
+- CSS (Estilos)
 - PHP >= 5.5.9
 - OpenSSL PHP Extension
 - PDO PHP Extension
@@ -30,7 +28,7 @@
 - Tokenizer PHP Extension
 - NPM
 
-## No terminal execute
+## NO SHELL DO LINUX EXECUTE:
 
 - composer create-project --prefer-dist resultsystems/school school
 - cd school
@@ -39,26 +37,23 @@
 - configure o arquivo .env
 - php artisan migrate
 
-### Opcionalmente gere dados falsos
+### DADOS PARA TESTE
 - php artisan db:seed --class=Fakers 
 
-## Errors 
+## ERRO
 
 #### *No supported encrypter found*
 run:
 ```
 php artisan key:generate
 ``` 
-
 #### Maximum function nesting level of '100' reached
 
-Isso acontece porque estás utilizando xdebug. Localize o arquivo php.ini do seu apache e adicione/altere a seguinte configuração:
+Isso acontece por utilizar xdebug. Localize o arquivo php.ini do seu apache e adicione/altere a seguinte configuração:
 
 ```
 xdebug.max_nesting_level=500
 ``` 
-
-
 ### Virtual Host
 
 **http.conf**
@@ -84,25 +79,7 @@ xdebug.max_nesting_level=500
 ```
 127.0.0.1	school.dev
 ```
-
-## Quer contribuir?
-
-- Fork o projeto
-- Faça o clone
-- No diretório criado, faça:
-- composer install
-- npm install
-- copie o arquivo .env.example para .env e edite-o apontando para o banco de dados
-- php artisan migrate
-- php artisan db:seed --class=Fakers
-- php artisan key:generate
-- npm i -g gulp
-- gulp      (para compilar todos os javascript)
-- gulp watch     (para recompilar ao salvar os arquivos)
-- Faça as alterações e faça Pull Request para o master
-
-
-## Roadmap
+## MAPA DE FUNCIONAMENTO DA APLICAÇÃO
 
 Implementar o sistema utilizando Vue-js e Materialize.
 
