@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: Leandro Henrique Reis <emtudo@gmail.com>
- * @Date:   2016-05-06 19:17:53
- * @Last Modified by:   Leandro Henrique Reis
- * @Last Modified time: 2016-06-04 19:51:13
- */
+
 
 namespace Domain\User;
 
