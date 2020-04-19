@@ -40,7 +40,7 @@ OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no 
 ### DADOS PARA TESTE
 - php artisan db:seed --class=Fakers 
 
-## ERRO
+## CASO OCORRO ESTE ERRO, EXECUTE O SCRIPT ABAIXO:
 
 #### *No supported encrypter found*
 run:
