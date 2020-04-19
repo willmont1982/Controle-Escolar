@@ -1,6 +1,6 @@
 
 ## APLICAÇÃO PARA GERENCIAMENTO ACADEMICO COMPLETO
-OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no projeto como um diferencial para minha avaliação, como por exemplo cadastros de controle de aluno, matérias e professores com frameworks PHP. Implementei também menu responsivo para uso mobile e router para carregamento de Forms. Também fiz o uso de Vue.js materialize.
+OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no projeto como um diferencial, como por exemplo cadastros de controle de aluno, matérias e professores com frameworks PHP, não fugindo das bibliotecas Javascipt em Angular. Implementei também menu responsivo para uso mobile e router para carregamento de Forms. Também fiz o uso de Vue.js materialize.
 
 ## FUNÇÕES DA APLICAÇÃO
 - Todo desenvolvido com TDD
