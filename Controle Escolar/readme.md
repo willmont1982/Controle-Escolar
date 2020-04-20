@@ -2,6 +2,18 @@
 ## APLICAÇÃO PARA GERENCIAMENTO ACADEMICO COMPLETO
 OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no projeto como um diferencial, como por exemplo cadastros de controle de aluno, matérias e professores com frameworks PHP, não fugindo das bibliotecas Javascipt em Angular. Implementei também menu responsivo para uso mobile e router para carregamento de Forms. Também fiz o uso de Vue.js materialize.
 
+## Como instalar
+git clone https://github.com/emtudo/school-spa
+cd school-spa
+cp config/common.env.js-dist config/common.env.js
+npm install
+
+Configure o config/common.env.js file with the API address (I'm assuming you've already installed the API)
+## npm run build
+
+How to test
+## npm run dev
+
 ## Aplicação multi plataformas devido a escalabilidade de algumas classes e módulos serem mais funcionais em determinadas linguagens e scripts.
 
 ## FUNÇÕES DA APLICAÇÃO
