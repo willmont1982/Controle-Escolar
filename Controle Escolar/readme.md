@@ -29,6 +29,7 @@ OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no 
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 - NPM
+- Bootstrap
 
 ## NO SHELL DO LINUX EXECUTE:
 
