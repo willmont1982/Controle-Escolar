@@ -3,10 +3,13 @@
 OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no projeto como um diferencial, como por exemplo cadastros de controle de aluno, matérias e professores com frameworks PHP, não fugindo das bibliotecas Javascipt em Angular. Implementei também menu responsivo para uso mobile e router para carregamento de Forms. Também fiz o uso de Vue.js materialize.
 
 ## Como instalar
-git clone https://github.com/emtudo/school-spa
-cd school-spa
-cp config/common.env.js-dist config/common.env.js
-npm install
+composer create-project emtudo/school-api
+cd school-api
+php artisan jwt:generate
+
+## Admin (Default)
+username: admin@user.com
+password: abc123
 
 Configure o config/common.env.js file com a API address (Suponho que você já instalou a API)
 ## npm run build
