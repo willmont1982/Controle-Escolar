@@ -14,6 +14,9 @@ Configure o config/common.env.js file com a API address (Suponho que você já i
 ## COMO TESTAR
 npm run dev
 
+## hosts
+127.0.0.1	school.dev
+
 ## Aplicação multi plataformas devido a escalabilidade de algumas classes e módulos serem mais funcionais em determinadas linguagens e scripts.
 
 ## FUNÇÕES DA APLICAÇÃO
