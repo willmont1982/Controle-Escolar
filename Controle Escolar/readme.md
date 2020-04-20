@@ -8,10 +8,10 @@ cd school-spa
 cp config/common.env.js-dist config/common.env.js
 npm install
 
-Configure o config/common.env.js file with the API address (I'm assuming you've already installed the API)
+Configure o config/common.env.js file com a API address (Suponho que você já instalou a API)
 ## npm run build
 
-How to test
+## COMO TESTAR
 ## npm run dev
 
 ## Aplicação multi plataformas devido a escalabilidade de algumas classes e módulos serem mais funcionais em determinadas linguagens e scripts.
