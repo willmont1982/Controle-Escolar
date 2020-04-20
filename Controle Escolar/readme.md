@@ -12,7 +12,7 @@ Configure o config/common.env.js file com a API address (Suponho que você já i
 ## npm run build
 
 ## COMO TESTAR
-## npm run dev
+npm run dev
 
 ## Aplicação multi plataformas devido a escalabilidade de algumas classes e módulos serem mais funcionais em determinadas linguagens e scripts.
 
