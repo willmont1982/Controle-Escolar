@@ -10,7 +10,7 @@ php artisan jwt:generate
 ## OU
 
 git clone https://github.com/willmont1982/Controle-Escolar
-cd projeto
+cd school-api
 docker-compose up --build -d
 
 ## Admin (Default)
