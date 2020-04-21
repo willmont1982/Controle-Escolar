@@ -7,6 +7,12 @@ composer create-project emtudo/school-api <--diretorio onde foi feito o download
 cd school-api
 php artisan jwt:generate
 
+## OU
+
+git clone https://github.com/willmont1982/Controle-Escolar
+cd projeto
+docker-compose up --build -d
+
 ## Admin (Default)
 username: admin@user.com
 password: abc123
