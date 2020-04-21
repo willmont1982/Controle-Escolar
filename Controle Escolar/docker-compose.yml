@@ -1,0 +1,74 @@
+# v2 syntax
+version: '2'
+
+# Named volumes
+volumes:
+  # MySQL Data
+  resultsystems-mysql-data:
+    driver: local
+  # Redis Data
+  resultsystems-redis-data:
+    driver: local
+
+services:
+  # MySQL (5.7)
+  mysql:
+    image: ambientum/mysql:5.7
+    container_name: resultsystems-mysql
+    volumes:
+      - resultsystems-mysql-data:/var/lib/mysql
+    ports:
+      - "9306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=resultsystems
+      - MYSQL_DATABASE=resultsystems
+      - MYSQL_USER=resultsystems
+      - MYSQL_PASSWORD=resultsystems
+
+  # Redis
+  cache:
+    image: ambientum/redis:3.2
+    container_name: resultsystems-redis
+    command: --appendonly yes
+    volumes:
+      - resultsystems-redis-data:/data
+    ports:
+      - "9379:6379"
+
+  # PHP (with nginx)
+  web:
+    image: ambientum/php:7.1-nginx
+    container_name: resultsystems-web
+    environment:
+      - XDEBUG_ENABLED=true
+      - PHP_IDE_CONFIG=serverName=ambientum
+      #- NR_ENABLED=true
+      #- NR_APP_NAME=KINO_DEV
+      #- NR_LICENSE_KEY=
+    volumes:
+      - .:/var/www/app
+    ports:
+      - "7788:8080"
+    links:
+      - mysql
+      - cache
+      - mailcatcher
+
+  # Laravel Queues
+  queue:
+    image: ambientum/php:7.1
+    container_name: resultsystems-queue
+    command: php artisan queue:listen
+    volumes:
+      - .:/var/www/app
+    links:
+      - mysql
+      - cache
+      - mailcatcher
+
+  mailcatcher:
+    image: ambientum/mailcatcher:latest
+    container_name: resultsystems-mailcatcher
+    ports:
+      - 1025:1025
+      - 1080:1080
