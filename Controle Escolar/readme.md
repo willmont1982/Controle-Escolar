@@ -3,7 +3,7 @@
 OBS: Visando uma aplicação mais completa, adicionei alguns recursos extras no projeto como um diferencial, como por exemplo cadastros de controle de aluno, matérias e professores com frameworks PHP, não fugindo das bibliotecas Javascipt em Angular. Implementei também menu responsivo para uso mobile e router para carregamento de Forms. Também fiz o uso de Vue.js materialize.
 
 ## Como instalar:
-composer create-project emtudo/school-api
+composer create-project emtudo/school-api <--diretorio onde foi feito o download da pasta
 cd school-api
 php artisan jwt:generate
 
@@ -19,6 +19,11 @@ npm run dev
 
 ## hosts
 127.0.0.1	school.dev
+
+## Dependencies - Não precisa docker pois ja tem o redis.
+php 7.2
+mysql 5.7
+redis
 
 ## Aplicação multi plataformas devido a escalabilidade de algumas classes e módulos serem mais funcionais em determinadas linguagens e scripts.
 
