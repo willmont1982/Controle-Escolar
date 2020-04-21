@@ -26,10 +26,11 @@ npm run dev
 ## hosts
 127.0.0.1	school.dev
 
-## Dependencies - Não precisa docker pois ja tem o redis.
+## Dependencies - Não precisa docker pois ja tem o redis, mesmo assim gerei o docker-compose.
 php 7.2
 mysql 5.7
 redis
+docker-compose.yml
 
 ## Aplicação multi plataformas devido a escalabilidade de algumas classes e módulos serem mais funcionais em determinadas linguagens e scripts.
 
